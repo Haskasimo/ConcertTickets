@@ -1,0 +1,223 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color:lightslategrey; 
+}
+/*---------------------navbar styling---------------------------------*/
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  color:aliceblue;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+.nav-link {
+    color: aliceblue;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/*---------------------End navbar----------------------------------*/
+
+/*----------------Tickets Box styling-------------------------------*/
+
+#Tickets-container {
+    width:90%;
+    height:100%;
+    background-color:lightsteelblue;
+    border-radius: 8px;
+    margin:auto;
+    padding-bottom:50px;
+
+}
+
+.open-button {
+    text-align: center;
+    font-size: 1.5vw;
+    border-radius: 8px;
+    padding: 2px 20px 2px 20px;
+    font-weight: bold
+}
+
+.open-button:hover {
+    background-color: slategrey;
+    color: aliceblue;
+}
+
+.featured {
+    text-align:center;
+    background-color:black;
+    color:aliceblue;
+    padding:19px 0px 5px 0px;
+    width:90%;
+    margin:auto;
+}
+iframe{
+    margin-left:5%;
+    text-align:center;
+    border-radius:8px
+}
+
+
+
+/*--------------Order form styling-----------------*/
+
+.form-popup {
+    display:none;
+    position:fixed;
+    bottom:0;
+    margin:auto;
+    z-index:9;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color:aliceblue;
+    font-family: perpetua, Rockwell Extra Bold;
+}
+
+.ticket_header {
+    text-align:center;
+    font-family:'Trebuchet MS';
+    background-color:slategray;
+    padding-bottom:10px;
+    padding-top:10px;
+    color:aliceblue;
+
+
+
+}
+/*-----Hover effects for input boxes -------*/
+input :hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+/*--Submit button-----*/
+.send {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Perpetua, Rockwell Extra Bold;
+    border:1px solid darkslategrey;
+    font-size: 1.5vw;
+    font-weight:bold;
+
+
+
+}
+
+    /*  Hover Effect for submit button */
+.send:hover {
+        background-color: slategray;
+        color: white;
+        
+    }
+.Cancel {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Perpetua, Rockwell Extra Bold;
+    border: 1px solid darkslategrey;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+    .Cancel:hover {
+        background-color: darkred;
+        color: white;
+    }
+
+form {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    font-family: 'Trebuchet MS', Optima;
+    border: 1px solid #480269;
+    width:800px;
+    margin:auto;
+    margin:auto;
+    text-align:left;
+    font-size:1vw;
+ 
+}
+.row {
+    margin:auto;
+    justify-content:space-around;
+    display:flex;
+    width:50%;
+}
+
+#seats {
+    padding-right: 40px;
+}
+
+.TicketOptions{
+    margin:auto;
+    text-align:center;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+/*End Sticky footer styles-------------------------------------------------- */

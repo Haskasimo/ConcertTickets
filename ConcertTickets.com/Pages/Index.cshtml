@@ -1,0 +1,77 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="Tickets-container" class="text-center">
+
+    <h1 class="display-4">Tickets</h1>
+    <button class="open-button" onclick="openForm()">Buy</button>
+
+    <div class="form-popup" id="OrderForm">
+        <form action="" class="form-container">
+            <h2 class="ticket_header">Ticket Options</h2>
+            <div class="TicketOptions">
+                <label for="city"> City</label>
+                <select name="city" id="city">
+                    <optgroup label="city">
+                        <option value="Portland">Portland, OR</option>
+                        <option value="Seattle">Seattle, WA</option>
+                        <option value="LA">Los Angeles, CA</option>
+                        <option value="San_Jose">San Jose, CA</option>
+                    </optgroup>
+                </select>
+                <label for="seats"> Seat Selection</label>
+                <select name="seats" id="seats">
+                    <optgroup label="Seat Section">
+                        <option value="Orchestra">Orchestra</option>
+                        <option value="Staduim1">Stadium One</option>
+                        <option value="Stadium2">Stadium Two</option>
+                        <option value="Mezzanine">Mezzanine</option>
+                    </optgroup>
+                </select>
+                <br>
+                    <label for="people"> Number of Seats</label>
+                    <select name="people" id="people">
+                        <optgroup label="number of seats">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </optgroup>
+                    </select>
+            </div>
+            <br>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="Email" name="email" required>
+
+            <label for="message">Phone Number</label>
+            <input type="tel" placeholder="Phone Number" name="phone" required>
+            <div class="row">
+                <div class="sendbtn">
+                    <button type="submit" class="send">Buy</button>
+                </div>
+                <div class="cancelbtn">
+                    <button type="button" class="Cancel" onclick="closeForm()">Close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<div class="featured">
+    <h3 class="featured-artist">Featured Artist</h3>
+    <h4 class="Artist">Lindsy Stirling</h4>
+</div>
+<div class="movie">
+    <iframe width="1000" height="560" src="https://www.youtube.com/embed/cDlGFbBipCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
